@@ -206,13 +206,13 @@
           <p>
             Existing inpainting methods have achieved promising performance for recovering regular or small image defects. 
 			However, filling in large continuous holes remains difficult due to the lack of constraints for the hole center. 
-			To address this problem, we devise a Recurrent Feature Reasoning network (RFR-Net) which is mainly constructed by 
+			To address this problem, we devise a Recurrent Feature Reasoning network <strong>(RFR-Net)</strong> which is mainly constructed by 
 			a plug-and-play Recurrent Feature Reasoning module and a Knowledge Consistent Attention (KCA) module. Analogous to 
 			how humans solve puzzles (i.e., first solve the easier parts and then use the results as additional information to 
 			solve difficult parts), the RFR module recurrently infers the hole boundaries of the convolutional feature maps and 
 			then uses them as clues for further inference. The module progressively strengthens the constraints for the hole 
 			center and the results become explicit. To capture information from distant places in the feature map for RFR, we 
-			further develop KCA and incorporate it in RFR. In addition, we propose Flexible RFR-Net (FRFR) that enhances the 
+			further develop KCA and incorporate it in RFR. In addition, we propose Flexible RFR-Net <strong>(FRFR)</strong> that enhances the 
 			effect without significantly increasing network parameters. In FRFR, to dynamically make use of valid information, 
 			we employ a flexible normalization (FN) module, which combines three basic normalization methods to build regular FN 
 			(FN-R) and mask-wise FN (FN-M). Extensive experiments comparing the performance with state-of-the-art image inpainting 
