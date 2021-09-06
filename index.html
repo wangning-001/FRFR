@@ -1,367 +1,343 @@
-<!DOCTYPE HTML>
-<!--
-	Strongly Typed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Strongly Typed by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis from a Single Image">
+  <meta name="keywords" content="Worldsheet, View Synthesis, Mesh">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis from a Single Image</title>
 
-			<!-- Header -->
-				<section id="header">
-					<div class="container">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
 
-						<!-- Logo -->
-							<h1 id="logo"><a href="index.html">Strongly Typed</a></h1>
-							<p>A responsive HTML5 site template. Manufactured by HTML5 UP.</p>
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a class="icon solid fa-home" href="index.html"><span>Introduction</span></a></li>
-									<li>
-										<a href="#" class="icon fa-chart-bar"><span>Dropdown</span></a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li><a href="#">Etiam dolore nisl</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a class="icon solid fa-cog" href="left-sidebar.html"><span>Left Sidebar</span></a></li>
-									<li><a class="icon solid fa-retweet" href="right-sidebar.html"><span>Right Sidebar</span></a></li>
-									<li><a class="icon solid fa-sitemap" href="no-sidebar.html"><span>No Sidebar</span></a></li>
-								</ul>
-							</nav>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
 
-					</div>
-				</section>
+  <link rel="shortcut icon" href="./favicon.ico">
 
-			<!-- Features -->
-				<section id="features">
-					<div class="container">
-						<header>
-							<h2>Gentlemen, behold! This is <strong>Strongly Typed</strong>!</h2>
-						</header>
-						<div class="row aln-center">
-							<div class="col-4 col-6-medium col-12-small">
+  <meta property="og:site_name" content="Worldsheet: View Synthesis from a Single Image" />
+  <meta property="og:type" content="video.other" />
+  <meta property="og:title" content="Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis from a Single Image" />
+  <meta property="og:description" content="Hu, Pathak. Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis from a Single Image." />
+  <meta property="og:url" content="https://worldsheet.github.io/" />
+  <meta property="og:image" content="https://worldsheet.github.io/static/images/preview.jpg" />
+  <meta property="og:image:secure" content="https://worldsheet.github.io/static/images/preview.jpg" />
+  <meta property="og:video" content="https://www.youtube.com/embed/j5aT3zRxFlk?rel=0&showinfo=0" />
+  <meta property="og:video:secure" content="https://www.youtube.com/embed/j5aT3zRxFlk?rel=0&showinfo=0" />
 
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-										<header>
-											<h3>Okay, so what is this?</h3>
-										</header>
-										<p>This is <strong>Strongly Typed</strong>, a free, fully responsive site template
-										by <a href="http://html5up.net">HTML5 UP</a>. Free for personal and commercial use under the
-										<a href="http://html5up.net/license">CCA 3.0 license</a>.</p>
-									</section>
+  <meta property="article:publisher" content="https://pathak22.github.io" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis from a Single Image" />
+  <meta name="twitter:description" content="Hu, Pathak. Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis from a Single Image." />
+  <meta name="twitter:url" content="https://worldsheet.github.io/" />
+  <meta name="twitter:image" content="https://worldsheet.github.io/static/images/preview.jpg" />
+  <!-- <meta name="twitter:label1" content="Written by" />
+  <meta name="twitter:data1" content="Deepak Pathak" /> -->
+  <!-- <meta name="twitter:label2" content="Filed under" />
+  <meta name="twitter:data2" content="" /> -->
+  <meta name="twitter:site" content="@pathak2206" />
+  <meta property="og:image:width" content="1600" />
+  <meta property="og:image:height" content="900" />
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <meta name="twitter:card" content="player" />
+  <meta name="twitter:image" content="https://worldsheet.github.io/static/images/preview.jpg" />
+  <meta name="twitter:player" content="https://www.youtube.com/embed/j5aT3zRxFlk" />
+  <meta name="twitter:player:width" content="640" />
+  <meta name="twitter:player:height" content="360" />
+</head>
+<body>
 
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-										<header>
-											<h3>Nice! What is HTML5 UP?</h3>
-										</header>
-										<p><a href="http://html5up.net">HTML5 UP</a> is a side project of <a href="http://twitter.com/ajlkn">AJ’s</a> (= me).
-										I started it as a way to both test my responsive tools and sharpen up my coding
-										and design skills a bit.</p>
-									</section>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Worldsheet: Wrapping the World in a 3D Sheet<br />for View Synthesis from a Single Image</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://ronghanghu.com/">Ronghang Hu</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a>‪Nikhila Ravi‬</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="http://acberg.com/">Alexander C. Berg</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.cs.cmu.edu/~dpathak/">Deepak Pathak</a><sup>2</sup>
+              <br /><sup>1</sup>Facebook AI Research (FAIR)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sup>2</sup>Carnegie Mellon University
+              <span class="brmod"></span>ICCV 2021 (Oral)</span>
+          </div>
 
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
+<!--           <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Facebook AI Research,</span>
+            <span class="author-block"><sup>2</sup>Carnegie Mellon University</span>
+          </div> -->
 
-								<!-- Feature -->
-									<section>
-										<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>What's this built with?</h3>
-										</header>
-										<p><strong>Responsive Tools</strong> is a simple set of tools for building responsive
-										sites and apps. All of my templates at <a href="http://html5up.net">HTML5 UP</a> are built using these tools.</p>
-									</section>
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="./resources/worldsheet.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2012.09854"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="#method_video"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/facebookresearch/worldsheet" 
+                   class="external-link button is-normal is-rounded is-dark" disabled>
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
 
-							</div>
-							<div class="col-12">
-								<ul class="actions">
-									<li><a href="#" class="button icon solid fa-file">Tell Me More</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-			<!-- Banner -->
-				<section id="banner">
-					<div class="container">
-						<p>Use this space for <strong>profound thoughts</strong>.<br />
-						Or an enormous ad. Whatever.</p>
-					</div>
-				</section>
+<section class="hero teaser">
+  <div class="hero-body">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <video id="teaser" autoplay muted loop height="100%">
+          <source src="./resources/teaser.mp4"
+                  type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Worldsheet synthesizes novel views of a scene from a <i>single image</i> using a mesh sheet for scene representation.
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
 
-			<!-- Main -->
-				<section id="main">
-					<div class="container">
-						<div class="row">
 
-							<!-- Content -->
-								<div id="content" class="col-8 col-12-medium">
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop height="100%">
+            <source src="./resources/compressed_no_mesh_Amtrak5_pad.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop height="100%">
+            <source src="./resources/compressed_no_mesh_painting4_pad.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop height="100%">
+            <source src="./resources/compressed_no_mesh_000000054605_pad.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop height="100%">
+            <source src="./resources/compressed_no_mesh_000000051738_pad.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop height="100%">
+            <source src="./resources/compressed_no_mesh_alley_pad_wo_turnround.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop height="100%">
+            <source src="./resources/compressed_no_mesh_painting1_pad.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-									<!-- Post -->
-										<article class="box post">
-											<header>
-												<h2><a href="#">I don’t want to say <strong>it’s the aliens</strong> ...<br />
-												but it’s the aliens.</a></h2>
-											</header>
-											<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>I mean isn't it possible?</h3>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-											Curabitur leo nibh, rutrum eu malesuada in tristique.</p>
-											<ul class="actions">
-												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
-											</ul>
-										</article>
 
-									<!-- Post -->
-										<article class="box post">
-											<header>
-												<h2><a href="#">By the way, many thanks to <strong>regularjane</strong>
-												for these awesome demo photos</a></h2>
-											</header>
-											<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>You should probably check out her work</h3>
-											<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-											ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-											sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-											magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-											consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-											justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-											mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-											Curabitur leo nibh, rutrum malesuada.</p>
-											<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-											Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-											vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-											magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-											tristique at erat. Curabitur leo nibh, rutrum eu malesuada in, tristique
-											at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-											tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-											magna tempus.</p>
-											<ul class="actions">
-												<li><a href="#" class="button icon solid fa-file">Continue Reading</a></li>
-											</ul>
-										</article>
+<section class="section">
+  <div class="container">
 
-								</div>
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-two-thirds">
+        <h2 class="title is-2">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            We present Worldsheet, a method for novel view synthesis using just a single RGB image as 
+            input. This is a challenging problem as it requires an understanding of the 3D geometry of 
+            the scene as well as texture mapping to generate both visible and occluded regions from 
+            new view-points. Our main insight is that simply shrink-wrapping a planar mesh sheet onto 
+            the input image, consistent with the learned intermediate depth, captures underlying geometry 
+            sufficient enough to generate photorealistic unseen views with arbitrarily large view-point 
+            changes. To operationalize this, we propose a novel differentiable texture sampler that 
+            allows our wrapped mesh sheet to be textured; which is then transformed into a target image 
+            via differentiable rendering. Our approach is category-agnostic, end-to-end trainable without 
+            using any 3D supervision and requires a single image at test time. Worldsheet consistently 
+            outperforms prior state-of-the-art methods on single-image view synthesis across several 
+            datasets. Furthermore, this simple idea captures novel views surprisingly well on a wide 
+            range of high resolution in-the-wild images in converting them into a navigable 3D pop-up.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Abstract. -->
 
-							<!-- Sidebar -->
-								<div id="sidebar" class="col-4 col-12-medium">
+  <!-- Paper video. -->
+  <br/>
+  <br/>
+  <div id="method_video" class="columns is-centered has-text-centered">
+    <div class="column is-two-thirds">
+      <h2 class="title is-2">Video</h2>
+      <div class="publication-video">
+<!--         <video controls>
+          <source src="./resources/spotlight.mp4"
+                  type="video/mp4">
+        </video> -->
+        <iframe src="https://www.youtube.com/embed/j5aT3zRxFlk?rel=0&showinfo=0&hd=1&vq=hd1080"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <!--/ Paper video. -->
+</section>
 
-									<!-- Excerpts -->
-										<section>
-											<ul class="divided">
-												<li>
 
-													<!-- Excerpt -->
-														<article class="box excerpt">
-															<header>
-																<span class="date">July 30</span>
-																<h3><a href="#">Just another post</a></h3>
-															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-														</article>
+<section class="section">
+  <div class="container">
 
-												</li>
-												<li>
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-2">Method</h2>
+        <div class="content has-text-justified">
+          <p>
+            Given an input view, we build a scene mesh by warping a grid sheet onto the scene geometry via grid offset and depth. Then, we sample the UV texture map of the scene mesh differentiably and render it from the target camera pose to output a novel view. Our mesh warping is learned end-to-end using 2D rendering losses on the novel view.
+          </p>
+          <img src="./resources/method.png" />
+        </div>
+        <br/>
 
-													<!-- Excerpt -->
-														<article class="box excerpt">
-															<header>
-																<span class="date">July 28</span>
-																<h3><a href="#">And another post</a></h3>
-															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-														</article>
+        <!-- Interpolating. -->
+        <h3 class="title is-4">Comparison to prior state-of-the-art</h3>
+        <div class="content has-text-justified">
+          <p>
+            We evaluate and compare with previous approaches on three benchmark datasets: Matterport, Replica, and RealEstate10K. Our model outperforms previous work by a large margin under PSNR and other metrics (see paper for details).
+          </p>
+        </div>
+        <div class="is-vcentered interpolation-panel">
+          <div class="content has-text-centered">
+            <img style="border: 1px solid #bbb; border-radius: 10px; width: 50%;" src="./resources/results.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<video style="border: 1px solid #bbb; border-radius: 10px; width: 44%;" autoplay muted loop>
+              <source src="./resources/project_page_synsin_comparison.mp4"
+                      type="video/mp4">
+            </video>
+          </div>
+          <div class="content has-text-centered">
+            <p>
+              Compared to <strong>SynSin (Wiles et al. 2020)</strong>, a prior state-of-the-art based on point cloud, our Worldsheet generalizes better to large viewpoint changes and has fewer artifacts.
+            </p>
+          </div>
+        </div>
+        <br/>
+        <br/>
 
-												</li>
-												<li>
+        <!--/ Interpolating. -->
 
-													<!-- Excerpt -->
-														<article class="box excerpt">
-															<header>
-																<span class="date">July 24</span>
-																<h3><a href="#">One more post</a></h3>
-															</header>
-															<p>Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
-															suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.</p>
-														</article>
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Failure cases</h3>
+        <div class="content has-text-justified">
+          <p>
+            Sometimes artifacts occur when the depth is discontinuous around the object boundary. For instance, the boundary of the flower or the tree is blurry. We hope to address these issues in future work by segmenting the Worldsheet around depth boundaries.
+          </p>
+        </div>
+        <div class="content has-text-centered">
+          <video style="border: 1px solid #bbb; border-radius: 10px;"
+                 controls
+                 muted
+                 width="35%">
+            <source src="./resources/compressed_no_mesh_scenery11_pad.mp4"
+                    type="video/mp4">
+          </video>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <video style="border: 1px solid #bbb; border-radius: 10px;"
+                 controls
+                 muted
+                 width="35%">
+            <source src="./resources/compressed_no_mesh_paris_pad.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <!--/ Animation. -->
+  </div>
+</section>
 
-												</li>
-											</ul>
-										</section>
 
-									<!-- Highlights -->
-										<section>
-											<ul class="divided">
-												<li>
+<section class="section" id="BibTeX">
+  <div class="container content">
+    <h2 class="titile">BibTeX</h2>
+    <pre><code>@inproceedings{hu2021worldsheet,
+  title={Worldsheet: Wrapping the World in a 3D Sheet for View Synthesis from a Single Image},
+  author={Hu, Ronghang and Ravi, Nikhila and Berg, Alexander C. and Pathak, Deepak},
+  booktitle={Proceedings of the IEEE International Conference on Computer Vision (ICCV)},
+  year={2021}
+}</code></pre>
+  </div>
+</section>
 
-													<!-- Highlight -->
-														<article class="box highlight">
-															<header>
-																<h3><a href="#">Something of note</a></h3>
-															</header>
-															<a href="#" class="image left"><img src="images/pic06.jpg" alt="" /></a>
-															<p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
-															<ul class="actions">
-																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-															</ul>
-														</article>
 
-												</li>
-												<li>
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a href="./resources/worldsheet.pdf" class="large-font bottom_buttons">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="large-font bottom_buttons" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+      <br />
+      <p>Page template borrowed from <a href="https://nerfies.github.io/"><span class="dnerf">D-NeRF</span></a>.</p>
+    </div>
+  </div>
+</footer>
 
-													<!-- Highlight -->
-														<article class="box highlight">
-															<header>
-																<h3><a href="#">Something of less note</a></h3>
-															</header>
-															<a href="#" class="image left"><img src="images/pic07.jpg" alt="" /></a>
-															<p>Phasellus sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
-															viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
-															convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
-															facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.</p>
-															<ul class="actions">
-																<li><a href="#" class="button icon solid fa-file">Learn More</a></li>
-															</ul>
-														</article>
-
-												</li>
-											</ul>
-										</section>
-
-								</div>
-
-						</div>
-					</div>
-				</section>
-
-			<!-- Footer -->
-				<section id="footer">
-					<div class="container">
-						<header>
-							<h2>Questions or comments? <strong>Get in touch:</strong></h2>
-						</header>
-						<div class="row">
-							<div class="col-6 col-12-medium">
-								<section>
-									<form method="post" action="#">
-										<div class="row gtr-50">
-											<div class="col-6 col-12-small">
-												<input name="name" placeholder="Name" type="text" />
-											</div>
-											<div class="col-6 col-12-small">
-												<input name="email" placeholder="Email" type="text" />
-											</div>
-											<div class="col-12">
-												<textarea name="message" placeholder="Message"></textarea>
-											</div>
-											<div class="col-12">
-												<a href="#" class="form-button-submit button icon solid fa-envelope">Send Message</a>
-											</div>
-										</div>
-									</form>
-								</section>
-							</div>
-							<div class="col-6 col-12-medium">
-								<section>
-									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur
-									leo nibh, rutrum eu malesuada.</p>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon solid fa-home">
-													1234 Somewhere Road<br />
-													Nashville, TN 00000<br />
-													USA
-												</li>
-												<li class="icon solid fa-phone">
-													(000) 000-0000
-												</li>
-												<li class="icon solid fa-envelope">
-													<a href="#">info@untitled.tld</a>
-												</li>
-											</ul>
-										</div>
-										<div class="col-6 col-12-small">
-											<ul class="icons">
-												<li class="icon brands fa-twitter">
-													<a href="#">@untitled</a>
-												</li>
-												<li class="icon brands fa-instagram">
-													<a href="#">instagram.com/untitled</a>
-												</li>
-												<li class="icon brands fa-dribbble">
-													<a href="#">dribbble.com/untitled</a>
-												</li>
-												<li class="icon brands fa-facebook-f">
-													<a href="#">facebook.com/untitled</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</section>
-							</div>
-						</div>
-					</div>
-					<div id="copyright" class="container">
-						<ul class="links">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</section>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+</body>
 </html>
