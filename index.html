@@ -204,19 +204,22 @@
         <h2 class="title is-2">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present Worldsheet, a method for novel view synthesis using just a single RGB image as 
-            input. This is a challenging problem as it requires an understanding of the 3D geometry of 
-            the scene as well as texture mapping to generate both visible and occluded regions from 
-            new view-points. Our main insight is that simply shrink-wrapping a planar mesh sheet onto 
-            the input image, consistent with the learned intermediate depth, captures underlying geometry 
-            sufficient enough to generate photorealistic unseen views with arbitrarily large view-point 
-            changes. To operationalize this, we propose a novel differentiable texture sampler that 
-            allows our wrapped mesh sheet to be textured; which is then transformed into a target image 
-            via differentiable rendering. Our approach is category-agnostic, end-to-end trainable without 
-            using any 3D supervision and requires a single image at test time. Worldsheet consistently 
-            outperforms prior state-of-the-art methods on single-image view synthesis across several 
-            datasets. Furthermore, this simple idea captures novel views surprisingly well on a wide 
-            range of high resolution in-the-wild images in converting them into a navigable 3D pop-up.
+            Existing inpainting methods have achieved promising performance for recovering regular or small image defects. 
+			However, filling in large continuous holes remains difficult due to the lack of constraints for the hole center. 
+			To address this problem, we devise a Recurrent Feature Reasoning network \textbf{(RFR-Net)} which is mainly 
+			constructed by a plug-and-play Recurrent Feature Reasoning module and a Knowledge Consistent Attention (KCA) module. 
+			Analogous to how humans solve puzzles (i.e., first solve the easier parts and then use the results as additional 
+			information to solve difficult parts), the RFR module recurrently infers the hole boundaries of the convolutional 
+			feature maps and then uses them as clues for further inference. The module progressively strengthens the constraints 
+			for the hole center and the results become explicit. To capture information from distant places in the feature map 
+			for RFR, we further develop KCA and incorporate it in RFR. In addition, we propose Flexible RFR-Net \textbf{(FRFR)} 
+			that enhances the effect without significantly increasing network parameters. In FRFR, to dynamically make use of 
+			valid information, we employ a flexible normalization (FN) module, which combines three basic normalization methods 
+			to build regular FN (FN-R) and mask-wise FN (FN-M). Extensive experiments comparing the performance with state-of
+			-the-art image inpainting methods demonstrate that both RFR and FRFR improve the qualitative scores, as well as 
+			significantly reduce the distortion in quantitative results and obtain realistic images with fine details. What's 
+			more, the proposed RFR is applied to the image super-resolution task, which demonstrates the superiority of the RFR 
+			module in various image restoration tasks.
           </p>
         </div>
       </div>
