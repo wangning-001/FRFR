@@ -229,23 +229,29 @@
   </div>
   <!--/ Abstract. -->
 
+
   <!-- Paper video. -->
+<!--
   <br/>
   <br/>
   <div id="method_video" class="columns is-centered has-text-centered">
     <div class="column is-two-thirds">
       <h2 class="title is-2">Video</h2>
       <div class="publication-video">
+-->
 <!--         <video controls>
           <source src="./resources/spotlight.mp4"
                   type="video/mp4">
         </video> -->
+<!--
         <iframe src="https://www.youtube.com/embed/j5aT3zRxFlk?rel=0&showinfo=0&hd=1&vq=hd1080"
                 frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
   </div>
+-->
   <!--/ Paper video. -->
+
 </section>
 
 
@@ -257,9 +263,10 @@
         <h2 class="title is-2">Method</h2>
         <div class="content has-text-justified">
           <p>
-            Given an input view, we build a scene mesh by warping a grid sheet onto the scene geometry via grid offset and depth. Then, we sample the UV texture map of the scene mesh differentiably and render it from the target camera pose to output a novel view. Our mesh warping is learned end-to-end using 2D rendering losses on the novel view.
+            The masked image is first mapped into the convolutional feature space and processed by a shared Feature Reasoning module recurrently. 
+			After the feature map is fully recovered, the generated feature maps are merged together (Omitted in this figure) and the merged feature is translated back to a RGB image.
           </p>
-          <img src="./resources/method.png" />
+          <img src="./resources/overview.png" />
         </div>
         <br/>
 
