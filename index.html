@@ -33,6 +33,13 @@
 </head>
 <body>
 
+<!--
+<nav class="navbar" role="navigation" aria-label="main navigation">
+	
+
+</nav>
+-->
+
 <section class="hero">
   <div class="hero-body">
     <div class="container">
@@ -176,8 +183,9 @@
 			</tbody>
 		</table>
     </div>
+	<!--/ Images. -->
   </div>
-  <!--/ Images. -->
+  
 
 </section>
 
@@ -194,7 +202,7 @@
 			However, filling in large continuous holes remains difficult due to the lack of constraints for the hole center. 
 			To address this problem, we devise a Recurrent Feature Reasoning network <strong>(RFR-Net)</strong> which is mainly constructed by 
 			a plug-and-play Recurrent Feature Reasoning module and a Knowledge Consistent Attention (KCA) module. Analogous to 
-			how humans solve puzzles (i.e., first solve the easier parts and then use the results as additional information to 
+			how humans solve puzzles (i.e., by first solving the easier parts and then using the results as additional information to 
 			solve difficult parts), the RFR module recurrently infers the hole boundaries of the convolutional feature maps and 
 			then uses them as clues for further inference. The module progressively strengthens the constraints for the hole 
 			center and the results become explicit. To capture information from distant places in the feature map for RFR, we 
@@ -218,7 +226,7 @@
 
 <section class="section">
   <div class="container">
-
+	
     <div class="columns is-centered">
       <div class="column is-full-width">
 	    <!-- Overview. -->
@@ -290,10 +298,341 @@
 
         <!-- Results. -->
         <h2 class="title is-2">Results</h2>
-        <div class="content has-text-justified">
+
+		<div class="content has-text-justified">
+		  <h4>Qualitative Evaluation</h4>
+        </div>
+		<div class="is-vcentered interpolation-panel">
+			<div class="content has-text-centered">
+				<b>Paris StreetView</b>
+			</div>
+			<div class="columns is-centered">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m8.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc8.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec8.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs8.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr8.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr8.png" width="180">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m39.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc39.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec39.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs39.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr39.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr39.png" width="180">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m47.png" width="180">
+								<br>
+								<div align="center">
+									<b>Input</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc47.png" width="180">
+								<br>
+								<div align="center">
+									<b>Pconv</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec47.png" width="180">
+								<br>
+								<div align="center">
+									<b>EC</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs47.png" width="180">
+								<br>
+								<div align="center">
+									<b>PRVS</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr47.png" width="180">
+								<br>
+								<div align="center">
+									<b>RFR</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr47.png" width="180">
+								<br>
+								<div align="center">
+									<b>FRFR (Ours)</b>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+		</div>
+		<div class="is-vcentered interpolation-panel">
+			<div class="content has-text-centered">
+				<b>CelebA</b>
+			</div>
+			<div class="columns is-centered">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m1085.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc1085.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec1085.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs1085.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr1085.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr1085.png" width="180">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m44.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc44.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec44.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs44.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr44.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr44.png" width="180">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m1067.png" width="180">
+								<br>
+								<div align="center">
+									<b>Input</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc1067.png" width="180">
+								<br>
+								<div align="center">
+									<b>Pconv</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec1067.png" width="180">
+								<br>
+								<div align="center">
+									<b>EC</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs1067.png" width="180">
+								<br>
+								<div align="center">
+									<b>PRVS</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr1067.png" width="180">
+								<br>
+								<div align="center">
+									<b>RFR</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr1067.png" width="180">
+								<br>
+								<div align="center">
+									<b>FRFR (Ours)</b>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+		</div>
+		<div class="is-vcentered interpolation-panel">
+			<div class="content has-text-centered">
+				<b>Places2</b>
+			</div>
+			<div class="columns is-centered">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m229.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc229.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec229.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs229.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr229.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr229.png" width="180">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m436.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc436.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec436.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs436.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr436.png" width="180">
+								<br>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr436.png" width="180">
+								<br>
+							</td>
+						</tr>
+						<<tr>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/m1982.png" width="180">
+								<br>
+								<div align="center">
+									<b>Input</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/pc1982.png" width="180">
+								<br>
+								<div align="center">
+									<b>Pconv</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/ec1982.png" width="180">
+								<br>
+								<div align="center">
+									<b>EC</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/prvs1982.png" width="180">
+								<br>
+								<div align="center">
+									<b>PRVS</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/rfr1982.png" width="180">
+								<br>
+								<div align="center">
+									<b>RFR</b>
+								</div>
+							</td>
+							<td>
+								<img class="responsive-img" style="border: 2px solid white;" src="./resources/results/frfr1982.png" width="180">
+								<br>
+								<div align="center">
+									<b>FRFR (Ours)</b>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		
+		</div>
+    
+        <br/>
+		
+		<div class="content has-text-justified">
 		  <h4>Quantitative Evaluation</h4>
           <p>
-            We evaluate and compare with previous approaches on three benchmark datasets: Paris StreetView, CelebA, and Places2. Our model outperforms previous work under PSNR and other metrics (see paper for details).
+            We evaluate and compare with previous approaches on three benchmark datasets: Paris StreetView, CelebA, and Places2. Our model outperforms previous work under several metrics, including PSNR, SSIM, LPIPS, L1, and FID.
           </p>
         </div>
         <div class="is-vcentered interpolation-panel">
@@ -303,7 +642,7 @@
             </p>
           </div>
 		  <div class="content has-text-centered">
-            <img style="border: 1px solid #bbb; border-radius: 10px; width: 60%;" src="./resources/paris-t.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img style="border: 1px solid #bbb; border-radius: 10px; width: 50%;" src="./resources/paris-t.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
         </div>
 		<div class="is-vcentered interpolation-panel">
@@ -313,7 +652,7 @@
             </p>
           </div>
 		  <div class="content has-text-centered">
-            <img style="border: 1px solid #bbb; border-radius: 10px; width: 60%;" src="./resources/celeba-t.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img style="border: 1px solid #bbb; border-radius: 10px; width: 50%;" src="./resources/celeba-t.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
         </div>
 		<div class="is-vcentered interpolation-panel">
@@ -322,13 +661,24 @@
               Results on Places2
           </div>
           <div class="content has-text-centered">
-            <img style="border: 1px solid #bbb; border-radius: 10px; width: 60%;" src="./resources/places-t.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img style="border: 1px solid #bbb; border-radius: 10px; width: 50%;" src="./resources/places-t.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </div>
         </div>
         <br/>
-		<h4>Qualitative Evaluation</h4>
 		
-        <br/>
+		<div class="content has-text-justified">
+		  <h4>Application of Super-Resolution</h4>
+		  <p>
+            We extend the bare FRFR to the image super-resolution (SR) task as FRFR-SR. In the FRSR-SR, we eliminate the KCA module and the FN module and replace the partial convolution layers with standard convolution layers.
+			The results of FRFR-SR with different recurrent numbers are shown below, showing comparable performance with sota SR methods.
+          </p>
+        </div>
+		<div class="is-vcentered interpolation-panel">
+		  <div class="content has-text-centered">
+            <img style="width: 80%;" src="./resources/SR.png">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+		
 
         <!--/ Results. -->
 		
