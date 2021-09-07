@@ -118,6 +118,96 @@
   </div>
 </section>
 
+<section class="section">
+  <div class="container">
+
+    <!-- Images. -->
+    <div class="columns is-centered">
+		<table  cellspacing="10">
+			<tbody>
+				<tr>
+					<td>
+						<img class="responsive-img" src="./resources/images/m1786.png" width="150">
+						<br>
+
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/pc1786.png" width="150">
+						<br>
+
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/ec1786.png" width="150">
+						<br>
+
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/prvs1786.png" width="150">
+						<br>
+
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/rfr1786.png" width="150">
+						<br>
+
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/frfr1786.png" width="150">
+						<br>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img class="responsive-img" src="./resources/images/m55.png" width="150">
+						<br>
+						<div align="center">
+							<b>Input</b>
+						</div>
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/pc55.png" width="150">
+						<br>
+						<div align="center">
+							<b>Pconv</b>
+						</div>
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/ec55.png" width="150">
+						<br>
+						<div align="center">
+							<b>EC</b>
+						</div>
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/prvs55.png" width="150">
+						<br>
+						<div align="center">
+							<b>PRVS</b>
+						</div>
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/rfr55.png" width="150">
+						<br>
+						<div align="center">
+							<b>RFR</b>
+						</div>
+					</td>
+					<td>
+						<img class="responsive-img" src="./resources/images/frfr55.png" width="150">
+						<br>
+						<div align="center">
+							<b>FRFR (Ours)</b>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+    </div>
+  </div>
+  <!--/ Images. -->
+
+</section>
 
 <section class="section">
   <div class="container">
@@ -159,6 +249,7 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
+	    <!-- Overview. -->
         <h2 class="title is-2">Method</h2>
         <div class="content has-text-justified">
           <p>
@@ -170,9 +261,63 @@
 		  </div>
         </div>
         <br/>
+		<!-- Overview. -->
+		
+		
+		<div class="columns is-centerd">
+		<!-- RFR. -->
+	    <div class="column">
+		<h3 class="title is-4">Recurrent Feature Reasoning</h3>
+		<div class="content has-text-justified">
+          <p>
+		    The Recurrent Feature Reasoning (RFR) module exploits the correlation between adjacent pixels and strengthens the constraints for estimating deeper pixels, 
+			where the area identification process and the feature reasoning process are performed continuously. 
+			It can be employed in a Plug-In-and-Play manner and can be placed in any layer of an existing network. 
+			After several times of reasoning, the feature maps are merged in an adaptive fashion.
+          </p>
+		  <div class="content has-text-centered">
+			<img style="width: 52%;" src="./resources/RFR.png" />
+		  </div>
+        </div>
+        <br/>
+		</div>
+		<!-- RFR. -->
+		
+		<!-- FN. -->
+	    <div class="column">
+		<h3 class="title is-4">Flexible Normalization</h3>
+		<div class="content has-text-justified">
+          <p>
+            The Flexible Normalization (FN) module that consist of two modes, namely, the regular mode (FN-R) and the mask-wise mode (FN-M), 
+			respect to the convolution types to reduce the mean and variation shifts dynamically. 
+			The two modes of FN are both composed of three basic types of normalization manners, including the batch normalization, instance normalization, and layer normalization. 
+			These three normalization manners are adaptively combined in FN to utilize information flexibly.
+          </p>
+		  <div class="content has-text-centered">
+			<img style="width: 90%;" src="./resources/FN.jpg" />
+		  </div>
+        </div>
+        <br/>
+		</div>
+		<!-- FN. -->
+		</div>
+		
+		<!-- KCA. -->
+        <h3 class="title is-4">Knowledge Consistent Attention</h3>
+        <div class="content has-text-justified">
+          <p>
+            The Knowledge Consistent Attention (KCA) module adaptively combines the scores from different recurrences and ensures consistency between patch-swapping processes among recurrences, 
+			leading to better results with exquisite details.
+          </p>
+		  <div class="content has-text-centered">
+			<img style="width: 70%;" src="./resources/KCA.jpg" />
+		  </div>
+        </div>
+        <br/>
+		<!-- KCA. -->
 
         <!-- Results. -->
-        <h3 class="title is-4">Comparison to prior state-of-the-art</h3>
+        <h2 class="title is-2">Results</h2>
         <div class="content has-text-justified">
 		  <h4>Quantitative Evaluation</h4>
           <p>
@@ -209,6 +354,8 @@
           </div>
         </div>
         <br/>
+		<h4>Qualitative Evaluation</h4>
+		
         <br/>
 
         <!--/ Results. -->
